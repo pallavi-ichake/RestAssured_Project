@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 4 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testGetUserByName">testGetUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testUpdateUserByName">testUpdateUserByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,16 +133,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Day1.HTTPRequest" class="method navigator-link" hash-for-method="getUSer">getUSer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testDeleteUserByName(testuser1)">testDeleteUserByName(testuser1)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testDeleteUserByName">testDeleteUserByName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,7 +152,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testGetUserByName">testGetUserByName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testDeleteUserByName(testuser1)">testDeleteUserByName(testuser1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,17 +162,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.test.UserTests" class="method navigator-link" hash-for-method="testPostUser">testPostUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,12 +172,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testPostuser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)">testPostuser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.UserTests2" class="method navigator-link" hash-for-method="testUpdateUserByName">testUpdateUserByName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.DDTests" class="method navigator-link" hash-for-method="testPostuser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)">testPostuser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -188,10 +197,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">api.test.UserTests</span>
+              <img src="failed.png"/>
+              <span class="class-name">api.test.UserTests2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -199,6 +208,18 @@
                   <a name="testDeleteUserByName">
                   </a> <!-- testDeleteUserByName -->
                   <span class="method-name">testDeleteUserByName</span>
+                  <div class="stack-trace">java.util.MissingResourceException: Can&apos;t find bundle for base name routes, locale en_IN
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getURL(UserEndPoints2.java:20)
+	at api.endpoints.UserEndPoints2.deleteUser(UserEndPoints2.java:74)
+	at api.test.UserTests2.testDeleteUserByName(UserTests2.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -206,6 +227,18 @@
                   <a name="testGetUserByName">
                   </a> <!-- testGetUserByName -->
                   <span class="method-name">testGetUserByName</span>
+                  <div class="stack-trace">java.util.MissingResourceException: Can&apos;t find bundle for base name routes, locale en_IN
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getURL(UserEndPoints2.java:20)
+	at api.endpoints.UserEndPoints2.readUser(UserEndPoints2.java:44)
+	at api.test.UserTests2.testGetUserByName(UserTests2.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -213,6 +246,18 @@
                   <a name="testPostUser">
                   </a> <!-- testPostUser -->
                   <span class="method-name">testPostUser</span>
+                  <div class="stack-trace">java.util.MissingResourceException: Can&apos;t find bundle for base name routes, locale en_IN
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getURL(UserEndPoints2.java:20)
+	at api.endpoints.UserEndPoints2.createUser(UserEndPoints2.java:28)
+	at api.test.UserTests2.testPostUser(UserTests2.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -220,14 +265,26 @@
                   <a name="testUpdateUserByName">
                   </a> <!-- testUpdateUserByName -->
                   <span class="method-name">testUpdateUserByName</span>
+                  <div class="stack-trace">java.util.MissingResourceException: Can&apos;t find bundle for base name routes, locale en_IN
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getURL(UserEndPoints2.java:20)
+	at api.endpoints.UserEndPoints2.updateUser(UserEndPoints2.java:58)
+	at api.test.UserTests2.testUpdateUserByName(UserTests2.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">api.test.UserTests2</span>
+              <span class="class-name">api.test.UserTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -283,14 +340,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testDeleteUserByName(testuser1)">
-                  </a> <!-- testDeleteUserByName(testuser1) -->
-                  <span class="method-name">testDeleteUserByName</span>
-                  <span class="parameters">(testuser1)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testDeleteUserByName(testuser2)">
                   </a> <!-- testDeleteUserByName(testuser2) -->
                   <span class="method-name">testDeleteUserByName</span>
@@ -307,10 +356,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">
-                  </a> <!-- testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897) -->
-                  <span class="method-name">testPostuser</span>
-                  <span class="parameters">(1010,testuser1,John,Canedy,a@gmail.com,test@1,1234567897)</span>
+                  <a name="testDeleteUserByName(testuser1)">
+                  </a> <!-- testDeleteUserByName(testuser1) -->
+                  <span class="method-name">testDeleteUserByName</span>
+                  <span class="parameters">(testuser1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -319,6 +368,14 @@
                   </a> <!-- testPostuser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897) -->
                   <span class="method-name">testPostuser</span>
                   <span class="parameters">(1030,testuser3,Smith,Steve,c@gmail.com,test@3,1234567897)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)">
+                  </a> <!-- testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897) -->
+                  <span class="method-name">testPostuser</span>
+                  <span class="parameters">(1010,testuser1,John,Canedy,a@gmail.com,test@1,1234567897)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -340,11 +397,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;api.utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;api.test.UserTests&quot;/&gt;
       &lt;class name=&quot;Day1.HTTPRequest&quot;/&gt;
@@ -393,68 +450,68 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPostUser')
 data.setCell(0, 2, 'api.test.UserTests')
-data.setCell(0, 3, 4226);
+data.setCell(0, 3, 4357);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testUpdateUserByName')
-data.setCell(1, 2, 'api.test.UserTests2')
-data.setCell(1, 3, 3669);
+data.setCell(1, 2, 'api.test.UserTests')
+data.setCell(1, 3, 3681);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUpdateUserByName')
-data.setCell(2, 2, 'api.test.UserTests')
-data.setCell(2, 3, 3467);
+data.setCell(2, 1, 'testDeleteUserByName')
+data.setCell(2, 2, 'api.test.DDTests')
+data.setCell(2, 3, 1851);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPostUser')
-data.setCell(3, 2, 'api.test.UserTests2')
-data.setCell(3, 3, 2064);
+data.setCell(3, 1, 'testPostuser')
+data.setCell(3, 2, 'api.test.DDTests')
+data.setCell(3, 3, 1830);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testPostuser')
 data.setCell(4, 2, 'api.test.DDTests')
-data.setCell(4, 3, 1944);
+data.setCell(4, 3, 1809);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testGetUserByName')
-data.setCell(5, 2, 'api.test.UserTests2')
-data.setCell(5, 3, 1940);
+data.setCell(5, 1, 'getUSer')
+data.setCell(5, 2, 'Day1.HTTPRequest')
+data.setCell(5, 3, 1735);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testGetUserByName')
+data.setCell(6, 1, 'testDeleteUserByName')
 data.setCell(6, 2, 'api.test.UserTests')
-data.setCell(6, 3, 1937);
+data.setCell(6, 3, 1730);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testPostuser')
-data.setCell(7, 2, 'api.test.DDTests')
-data.setCell(7, 3, 1922);
+data.setCell(7, 1, 'testGetUserByName')
+data.setCell(7, 2, 'api.test.UserTests')
+data.setCell(7, 3, 1713);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getUSer')
-data.setCell(8, 2, 'Day1.HTTPRequest')
-data.setCell(8, 3, 1760);
+data.setCell(8, 1, 'testPostuser')
+data.setCell(8, 2, 'api.test.DDTests')
+data.setCell(8, 3, 1640);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testPostuser')
+data.setCell(9, 1, 'testDeleteUserByName')
 data.setCell(9, 2, 'api.test.DDTests')
-data.setCell(9, 3, 1737);
+data.setCell(9, 3, 1545);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'testDeleteUserByName')
-data.setCell(10, 2, 'api.test.UserTests')
-data.setCell(10, 3, 1637);
+data.setCell(10, 2, 'api.test.DDTests')
+data.setCell(10, 3, 1523);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testDeleteUserByName')
+data.setCell(11, 1, 'testPostUser')
 data.setCell(11, 2, 'api.test.UserTests2')
-data.setCell(11, 3, 1629);
+data.setCell(11, 3, 6);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testDeleteUserByName')
-data.setCell(12, 2, 'api.test.DDTests')
-data.setCell(12, 3, 1619);
+data.setCell(12, 1, 'testUpdateUserByName')
+data.setCell(12, 2, 'api.test.UserTests2')
+data.setCell(12, 3, 1);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'testDeleteUserByName')
-data.setCell(13, 2, 'api.test.DDTests')
-data.setCell(13, 3, 1529);
+data.setCell(13, 2, 'api.test.UserTests2')
+data.setCell(13, 3, 1);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testDeleteUserByName')
-data.setCell(14, 2, 'api.test.DDTests')
-data.setCell(14, 3, 1522);
+data.setCell(14, 1, 'testGetUserByName')
+data.setCell(14, 2, 'api.test.UserTests2')
+data.setCell(14, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -487,76 +544,84 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">1049 ms</span>
+                <span class="method-start">1013 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserByName</span>
-                <span class="method-start">5298 ms</span>
+                <span class="method-start">5398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdateUserByName</span>
-                <span class="method-start">7245 ms</span>
+                <span class="method-start">7114 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserByName</span>
-                <span class="method-start">10716 ms</span>
+                <span class="method-start">10797 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Day1.HTTPRequest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getUSer</span>
-                <span class="method-start">12364 ms</span>
+                <span class="method-start">12530 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">api.test.UserTests2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14129 ms</span>
+                <span class="method-start">14268 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testPostUser</span>
-                <span class="method-start">14181 ms</span>
+                <span class="method-start">14312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testGetUserByName</span>
-                <span class="method-start">16250 ms</span>
+                <span class="method-start">14327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testUpdateUserByName</span>
-                <span class="method-start">18206 ms</span>
+                <span class="method-start">14330 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testDeleteUserByName</span>
-                <span class="method-start">21883 ms</span>
+                <span class="method-start">14333 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">api.test.DDTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testPostuser(1010, testuser1, John, Canedy, a@gmail.com, test@1, 1234567897)</span>
-                <span class="method-start">25271 ms</span>
+                <span class="method-start">15947 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPostuser(1020, testuser2, Kim, Kom, b@gmail.com, test@2, 1234567897)</span>
-                <span class="method-start">27019 ms</span>
+                <span class="method-start">17758 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPostuser(1030, testuser3, Smith, Steve, c@gmail.com, test@3, 1234567897)</span>
-                <span class="method-start">28943 ms</span>
+                <span class="method-start">19399 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserByName(testuser1)</span>
-                <span class="method-start">31014 ms</span>
+                <span class="method-start">21335 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserByName(testuser2)</span>
-                <span class="method-start">32556 ms</span>
+                <span class="method-start">23188 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserByName(testuser3)</span>
-                <span class="method-start">34080 ms</span>
+                <span class="method-start">24712 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
